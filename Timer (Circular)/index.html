@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Ivan's Timer</title>
+</head>
+<body>
+
+  <div class="timer">
+    <svg xmlns="http://www.w3.org/2000/svg" width="400" height="400">
+      <defs>
+        <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#00bc9b" />
+          <stop offset="100%" stop-color="#5eaefd" />
+        </linearGradient>
+      </defs>
+      <circle r="190" cx="200" cy="200" stroke="url(#gradient)" stroke-width="5" fill="none"/>
+    </svg>
+
+    <div class="container">
+      <p>Timer</p>
+      <input class ="screen" id="duration" value="15">
+      <div class="container2">
+        <button class="start-btn" id="start">
+          <i class="fa fa-play"></i>
+        </button>
+        <button class="pause-btn" id="pause">
+          <i class="fa fa-pause"></i>
+        </button>
+      </div>
+    </div>
+
+  </div>
+  
+  <script src="../timer.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+:root {
+  --primary-color: rgb(47, 130, 255);
+  --secondary-color: rgb(172, 205, 255);
+  --bg: rgb(44, 44, 44);
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color:rgb(44, 44, 44);
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+
+  .timer {
+    svg {
+      position: absolute;
+      transform: rotate(-90deg);
+    }
+  
+    .container {
+      display: inline-block;
+      position: relative;
+      padding: 2.5em;
+      border-radius: 1.5em;
+      transition: .4s;
+      z-index: 5;
+      margin-left: -2em;
+  
+      p {
+        position: absolute;
+        margin-top: .7em;
+        margin-left: 4.1em;
+        letter-spacing: .2rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 2rem;
+        background-color: #f3ec78;
+        background-image: linear-gradient(45deg, #424242, #686868);
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-text-fill-color: transparent;
+      }
+  
+      .screen {
+        margin-top: 0.7em;
+        width: 3.5em;
+        letter-spacing: .3rem;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 7rem;
+        border: none;
+        background-image: linear-gradient(45deg, #089cff, #10b93a);
+        background-size: 100%;
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        -moz-text-fill-color: transparent;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: -.1em;
+      }
+  
+      .screen:focus {
+        outline: none;
+      }
+  
+      .container2 {
+        text-align: center;
+  
+        .start-btn, .pause-btn {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 3rem;
+          color: white;
+          border: none;
+          cursor: pointer;
+          transition: .5s;
+        }
+  
+        .start-btn {
+          background-color: transparent;
+          margin-right: .6em;
+        }
+  
+        .start-btn:hover {
+          color: rgb(76, 199, 76);
+        }
+  
+        .pause-btn {
+          background-color: transparent;
+        }
+  
+        .pause-btn:hover {
+          color: rgb(243, 92, 72);
+        }
+  
+      }
+    }
+  }
+}
